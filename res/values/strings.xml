@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">健康にE-ね(仮)</string>
+    <string name="l_menu_title_name">メニュー</string>
+    <string name="l_ok">登録</string>
+    <string name="l_measure_start">計測開始</string>
+    <string name="l_measure_end">計測終了</string>
+    <string name="l_name_sei">名前(性)</string>
+    <string name="l_name_na">名前(名)</string>
+    <string name="l_frgna_sei">ふりがな(性)</string>
+    <string name="l_frgna_na">ふりがな(名)</string>
+    <string name="l_birthday">誕生日</string>
+    <string name="l_sex">性別</string>
+    <string name="l_email">E-Mail</string>
+    <string name="l_height">身長(cm)</string>
+    <string name="l_weight">体重(Kg)</string>
+    <string name="l_body_fat">体脂肪率(%)</string>
+    <string name="l_body_age">体年齢(歳)</string>
+    <string name="l_bone_density">骨密度</string>
+    <string name="l_shohi_calorie">消費カロリー</string>
+    <string name="l_kyori">距離(km)</string>
+    <string name="l_speed">速度(km/h)</string>
+    <string name="l_mode">計測モード</string>
+    <string name="l_mets">METs</string>
+    <string name="l_measure_date">測定日</string>
+    <string name="val_sex_male">男</string>
+    <string name="val_sex_female">女</string>
+    <string-array name="run_mode">
+        <item >ウォーキング</item>
+    </string-array>
+
+</resources>

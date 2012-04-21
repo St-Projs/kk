@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </LinearLayout>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/fotter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btn_user_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/l_ok"
+            android:textSize="16sp"
+            android:textStyle="bold" 
+            android:onClick="onSubmit" />
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fotter"
+        android:layout_below="@id/header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_name_sei"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_sei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:maxLength="20" android:inputType="textPersonName">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_name_na"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_na"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="textPersonName"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_frgna_sei"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/frgna_sei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="textPersonName"/>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_frgna_na"
+                android:textSize="16sp"
+                android:textStyle="bold" 	/>
+
+            <EditText
+                android:id="@+id/frgna_na"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="textPersonName"/>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_birthday"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnSetDate" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_sex"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+			<RadioGroup 
+			    	android:id="@+id/sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+			    >
+			    <RadioButton
+                    android:id="@+id/sex_male"
+                    android:tag="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/val_sex_male" />
+
+                <RadioButton
+                    android:id="@+id/sex_female"
+                    android:tag="1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/val_sex_female" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_email"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/e_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_height"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"  android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_weight"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_body_fat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/body_fat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_body_age"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/body_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="number"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_bone_density"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bone_destiny"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/l_measure_date"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/measure_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:onClick="btnSetDate"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
